@@ -1,15 +1,16 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import Gestures from "./Gestures";
+import AnimationControls from "./AnimationControls";
+import ViewbasedAnimations from "./ViewbasedAnimations";
+import ScrollAnimation from "./ScrollAnimation";
 
 function App() {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
     <>
-      <div className="grid place-content-center h-screen gap-2">
-        {/* <h1 className="bg-blue-500 text-3xl p-5 rounded-md">
-          Tailwind X React
-        </h1> */}
+      {/* <div className="grid place-content-center h-screen gap-2">
         <motion.button
           className=" bg-blue-600 rounded-md text-white p-2 mb-14"
           onClick={() => setIsVisible(!isVisible)}
@@ -41,7 +42,11 @@ function App() {
             ></motion.div>
           )}
         </AnimatePresence>
-      </div>
+      </div> */}
+      {/*   <Gestures /> */}
+      {/*  <AnimationControls /> */}
+      {/*  <ViewbasedAnimations /> */}
+      <ScrollAnimation />
     </>
   );
 }
